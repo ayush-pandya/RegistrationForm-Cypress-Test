@@ -61,11 +61,11 @@ describe("Employee REgistration Form", () =>{
           cy.get(".submit").click();
           cy.get("#wrong-phoneNumber").should("be.visible");
         })
-        // it("Correct Phone Number", () => {
-        //     cy.get("#phoneNumber").type("9231302571");
-        //   cy.get(".submit").click();
-        //   cy.get("#right-phoneNumber").should("be.visible");
-        // })
+        it("Correct Phone Number", () => {
+            cy.get("#phoneNumber").type("9231302571");
+          cy.get(".submit").click();
+          cy.get("#right-phoneNumber").should("be.visible");
+        })
     })
     describe("Adhaar-Card Number Test", () => {
         it("Empty Adhaar-Number Field", () => {
